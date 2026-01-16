@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -179,15 +179,68 @@
         <button class="browse__button">View all</button>
       </section>
 
+      <img src="images/br.png" alt="bronx" class="br__image" />
+
       <section class="about" id="about">
-        <h2 class="title">About us</h2>
+        <h2 class="title about__title">About us</h2>
+
+        <div class="about__descr">
+          <p class="about__descr__text">
+            We’re a London-based tech company on a mission to remove barriers
+            between people and technology.
+          </p>
+          <p class="about__descr__text">
+            To do this, we’re crafting intuitive, flawlessly connected products
+            that improve our lives without getting in the way. No confusing
+            tech-speak. No silly product names. Just artistry, passion and
+            trust. And products we’re proud to share with our friends and
+            family. Simple.
+          </p>
+
+          <p class="about__descr__text">
+            Because beautiful tech shouldn’t be complicated.
+          </p>
+        </div>
       </section>
 
       <section class="contacts" id="contacts">
-        <h2 class="title">Contact us</h2>
+        <h2 class="title title__contact">Contact us</h2>
+        <form action="/send">
+          <div class="contact-us__container">
+            <input type="name" placeholder="Name" class="contact-us__input" />
+          </div>
+          <div class="contact-us__container">
+            <input type="email" placeholder="Email" class="contact-us__input" />
+          </div>
+
+          <div class="contact-us__container">
+            <input
+              type="message"
+              placeholder="Message"
+              class="contact-us__input contact-us__input-message"
+            />
+          </div>
+        </form>
+
+        <button class="contact-us__button">Send</button>
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__staff">
+        <p class="footer__op">Phone</p>
+        <p class="footer__main_info">+1 234 5555-55-55</p>
+      </div>
+      <div class="footer__staff">
+        <p class="footer__op">Email</p>
+        <p class="footer__main_info">hello@nothing.com</p>
+      </div>
+      <div class="footer__staff">
+        <p class="footer__op">Address</p>
+        <p class="footer__main_info">
+          400 first ave. <br> suite 700 <br> Minneapolis, MN 55401
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

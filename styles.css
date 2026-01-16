@@ -11,6 +11,9 @@
   margin: 0;
 }
 
+p {
+  font-family: "Space Mono", monospace;
+}
 .page__menu {
   position: fixed;
   top: 0;
@@ -23,6 +26,13 @@
 .page__menu:target {
   opacity: 1;
   pointer-events: all;
+}
+
+.br__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 96px;
 }
 /* #endregion */
 
@@ -181,8 +191,6 @@
   text-decoration: none;
 }
 
-
-
 .product__title {
   margin: 0;
   margin-top: 16px;
@@ -220,13 +228,11 @@
   flex: 1 1 0;
 }
 
-
 .browse__photo {
   width: 100%;
   height: auto;
   display: block;
 }
-
 
 .browse__title {
   margin: 0;
@@ -235,15 +241,15 @@
   line-height: 140%;
   font-style: bold;
 }
- 
+
 .browse__button {
-  width: calc(100% - 40px); 
+  width: calc(100% - 40px);
   margin: 0 auto;
   display: block;
   font-size: 16px;
   font-weight: 700;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   background-color: #292929;
   border-radius: 8px;
@@ -256,6 +262,110 @@
   -webkit-appearance: none;
 }
 
-
+.browse__button:hover {
+  background-color: #444444;
+}
 
 /* #endregion browse */
+
+/* #region about */
+
+.about {
+  margin-top: 48px;
+  margin-right: 20px;
+  margin-bottom: 48px;
+}
+
+.about__descr {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 140%;
+  color: inherit;
+}
+
+/* #endregion about */
+
+/* #region contact-us */
+
+.title__contact {
+  margin-bottom: 48px;
+}
+.contact-us__container {
+  margin: 0 20px;
+}
+
+.contact-us__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+
+  font-style:
+    Space Mono,
+    monospace;
+  font-size: 14px;
+  line-height: 140%;
+  color: #7e7e83;
+
+  border-radius: 8px;
+  border: none;
+  background-color: #f8f8fa;
+}
+
+.contact-us__input:focus{
+border-color: #292929;
+}
+
+.contact-us__button {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #292929;
+  cursor: pointer;
+  background-color: #f8f8fa;
+  border-radius: 8px;
+  padding: 14.5px 0;
+  border: 2px solid #f0f1f4;
+
+  box-shadow: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+/* #endregion contact-us */
+
+/* #region footer */
+
+.footer {
+  margin-top: 48px;
+}
+.footer__staff {
+  margin: 0 20px;
+  margin-bottom: 24px;
+}
+
+.footer__op {
+  font-style:
+    Space Grotesk,
+    sans-serif;
+  margin: 0;
+  color: #9393a3;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.footer__main_info {
+  font-style:
+    Space Mono,
+    monospace;
+  margin: 0;
+  margin-top: 8px;
+  color: #191919;
+  font-size: 16px;
+  line-height: 140%;
+}
+/* #endregion footer */
